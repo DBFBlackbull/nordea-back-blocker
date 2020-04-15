@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Nordea Back Button Blocker",
+  "description": "Block the back button on Nordea.",
+  "version": "1.0",
+  "browser_action": {},
+  "background": {
+    "scripts": ["background.js"],
+    "persistance": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.netbank.nordea.dk/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/nordea16.png",
+    "32": "images/nordea32.png",
+    "48": "images/nordea48.png",
+    "128": "images/nordea128.png"
+  }
+}
