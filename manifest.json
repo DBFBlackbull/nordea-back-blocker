@@ -4,6 +4,7 @@
   "description": "Block the back button on Nordea.",
   "version": "1.0",
   "browser_action": {},
+  "permissions": ["storage", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistance": false
